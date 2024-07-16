@@ -335,9 +335,9 @@ metadata:
 spec:
   port:
     targetPort: console
-  tls:
-    insecureEdgeTerminationPolicy: Redirect
-    termination: edge
+  #tls:
+    #insecureEdgeTerminationPolicy: Redirect
+    #termination: edge
   to:
     kind: Service
     name: minio
@@ -358,9 +358,9 @@ metadata:
 spec:
   port:
     targetPort: api
-  tls:
-    insecureEdgeTerminationPolicy: Redirect
-    termination: edge
+  #tls:
+    #insecureEdgeTerminationPolicy: Redirect
+    #termination: edge
   to:
     kind: Service
     name: minio
